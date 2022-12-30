@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: rgb;
+
+}
+
+
+
+
+
+    }
+
+    .head_text {
+        color: rgb;
+    }
+
+    .card {
+        background-color: black;
+
+    }
+
+      h2{
+    color: #d3d3d3;
+    }
+
+h5{
+    color: #d3d3d3;
+    }
+
+
+
+
+      p{
+    color: #d3d3d3;
+}
+</style>
+
+<div class="container">
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 mt-3 left">
+            <div class="card mb-4">
+                <div class="card-body">
+
+<div class="container">
+  <p style="text-align: center; font-size: 30px; font-weight: bold; padding-top: 30px;">CONTACT US</p>
+
+  <form method="POST">
+      {% csrf_token %}
+ <h5>
+
+
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+          <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name...">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">E-mail</label>
+        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email address...">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What's on your mind..."></textarea>
+      </div>
+ </h5>
+
+      <button type="submit" class="btn btn-light">Submit</button>
+  </form>
+</div>
+     </div>
+            </div>
+        </div>
+ </div>
+    </div>
+
+
+
+{% endblock content %}
